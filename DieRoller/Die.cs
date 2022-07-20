@@ -12,9 +12,18 @@ namespace DieRoller
     public class Die
     {
         /// <summary>
+        /// Creates the die and rolls it 
+        /// to start with a random number.
+        /// </summary>
+        public Die()
+        {
+            Roll();
+        }
+
+        /// <summary>
         /// current face up value (What was rolled)
         /// </summary>
-        public byte FaceValue { get; set; }
+        public byte FaceValue { get; private set; }
 
         /// <summary>
         /// True if die is currently held
