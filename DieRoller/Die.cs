@@ -28,7 +28,9 @@ namespace DieRoller
         /// <summary>
         /// current face up value (What was rolled)
         /// </summary>
+
         public byte FaceValue { get; private set; }
+
 
         /// <summary>
         /// True if die is currently held
