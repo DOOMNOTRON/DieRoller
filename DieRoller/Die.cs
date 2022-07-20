@@ -14,7 +14,7 @@ namespace DieRoller
         /// <summary>
         /// current face up value (What was rolled)
         /// </summary>
-        public int FaceValue { get; set; }
+        public byte FaceValue { get; set; }
 
         /// <summary>
         /// True if die is currently held
@@ -25,7 +25,7 @@ namespace DieRoller
 
         /// <summary>
         /// Rolls the die and sets the <see cref="FaceValue"/>
-        /// to the new number
+        /// to the new number. Returns new number.
         /// </summary>
         public byte Roll()
         {
